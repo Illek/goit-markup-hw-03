@@ -297,12 +297,15 @@ img {
 
 .team-title {
   display: flex;
-
 }
 
 .team-list {
   display:flex;
   gap: 24px;
+}
+
+.team-list:first-child {
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-info {
@@ -314,10 +317,6 @@ img {
   flex-wrap: wrap;
   gap: 48px 24px;
     flex-shrink: 0;
-}
-
-.portfolio-list:first-child {
-  border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-item {
