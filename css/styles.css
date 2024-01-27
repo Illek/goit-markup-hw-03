@@ -13,7 +13,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1158px;
+  width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -40,8 +40,7 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 img {
@@ -123,6 +122,7 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
+  margin: 0 auto;
   border: none;
 }
 
@@ -158,19 +158,17 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .feathures-list-text,
 .team-list-text,
 .portfolio-list-text {
-  color: m#434455;
+  color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.feathures-title {
-  display: none;
+  text-align: left;
 }
 
 /*---------- Our team (cards) section (3) ----------*/
@@ -192,6 +190,7 @@ img {
 
 .footer {
   background-color: #2E2F42;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -213,9 +212,24 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
+  margin-top: 16px;
 }
 
 /*---------- Elements position ----------*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .section:not(.main-hero) {
   padding: 120px 0;
@@ -258,7 +272,60 @@ img {
 }
 
 .feathures-item,
-.team-list-li,
-.portfolio-item {
+.team-list-li {
   width: calc((100% - 16px) / 3); 
+  gap: 24px;
 }
+
+.team-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.team-title {
+  display: flex;
+
+}
+
+.team-list {
+  display:flex;
+  gap: 24px;
+}
+
+.team-info {
+  padding: 32px 0;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+    flex-shrink: 0;
+}
+
+.portfolio-item {
+  background: #FFF;
+  flex-basis: calc((100% - 48px) / 3);
+  align-items: flex-start
+
+}
+
+.portfolio-info {
+  padding: 32px 16px;
+  border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.portfolio-info 
+.portfolio-subtitle, 
+.portfolio-list-text {
+  text-align: left;
+}
+
+.team-subtitle,
+.team-list-text {
+  text-align: center;
+}
+
