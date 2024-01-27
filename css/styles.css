@@ -99,9 +99,12 @@ img {
 
 .main-hero {
   background-color: #2E2F42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .main-hero-title {
+  max-width: 496px;
   color: #FFF;
   text-align: center;
   font-size: 56px;
@@ -124,6 +127,7 @@ img {
   padding: 16px 32px;
   margin: 0 auto;
   border: none;
+  min-width: 169px;
 }
 
 .main-hero-btn:hover {
@@ -186,6 +190,10 @@ img {
   gap: 24px;
 }
 
+.feathures-list:first-child {
+  border-radius: 0px 0px 4px 4px;
+
+}
 /*---------- Footer ----------*/
 
 .footer {
@@ -201,6 +209,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-span {
@@ -213,7 +223,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
-  margin-top: 16px;
 }
 
 /*---------- Elements position ----------*/
@@ -238,7 +247,10 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #E7E9FC;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc
 }
 
 .header-nav {
